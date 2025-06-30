@@ -3,14 +3,14 @@
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
              http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
              version="2.2">
-    <persistence-unit name="yourUnitName">
+    <persistence-unit name="user-service">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>your.package.EntityClass</class>
+        <class>com.example.entity.User</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.example.org.postgresql.Driver</property>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/yourdatabase"/>
-            <property name="javax.persistence.jdbc.user" value="yourusername"/>
-            <property name="javax.persistence.jdbc.password" value="yourpassword"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/user_service"/>
+            <property name="javax.persistence.jdbc.user" value="dan"/>
+            <property name="javax.persistence.jdbc.password" value="1"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
         </properties>
     </persistence-unit>

@@ -83,4 +83,10 @@ public class User {
                 ", createdAt=" + createdAt +
                 '}';
     }
+
+    public void setId(long l) {
+    }
+
+    public void setCreatedAt(LocalDateTime now) {
+    }
 }
